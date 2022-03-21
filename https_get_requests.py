@@ -19,4 +19,5 @@ class get_requests:
             json_data.append({"Url": url.url, "Status-code": url.status_code, "Content-Length": len(url.content)})
         return json_data
 
-print(json.dumps(get_requests.create_json_data(), indent=2))
+if __name__ == "__main__":
+    print(json.dumps(get_requests.create_json_data(), indent=2))
